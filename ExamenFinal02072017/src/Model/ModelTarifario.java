@@ -14,8 +14,9 @@ import javax.swing.table.DefaultTableModel;
  * @created 02-jul.-2017 19:16:48
  */
 public class ModelTarifario {
-int idTarifa;
-String nombre;
+
+    int idTarifa;
+    String nombre;
     public Conexion m_Conexion;
     public ModelTipoTarifa m_ModelTipoTarifa;
 
@@ -58,28 +59,27 @@ String nombre;
      * @param nombre
      */
     public void setTarifario(String nombre) {
-        this.nombre=nombre;
-        
+        this.nombre = nombre;
+
     }
 
     public void registrar() {
-try {
-int generate_Id = 0;
+        try {
+            int generate_Id = 0;
             String sql = "insert into tarifa (nombre) values (?)";
-            
+
             PreparedStatement ps = m_Conexion.getConexion().prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
-            ps.setString(1,nombre);
-            
+            ps.setString(1, nombre);
 
-             int rows = ps.executeUpdate();
+            int rows = ps.executeUpdate();
             if (rows != 0) {
                 ResultSet generateKeys = ps.getGeneratedKeys();
                 if (generateKeys.next()) {
                     generate_Id = generateKeys.getInt(1);
                 }
             }
-m_ModelTipoTarifa.registrarPreciosParaTarifario(generate_Id);
+            m_ModelTipoTarifa.registrarPreciosParaTarifario(generate_Id);
         } catch (SQLException ex) {
             Logger.getLogger(ModelCliente.class.getName()).log(Level.SEVERE, null, ex);
         }
