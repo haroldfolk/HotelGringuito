@@ -56,10 +56,6 @@ public class ViewTipo extends javax.swing.JFrame {
 
         jLabel3.setText("Descripcion");
 
-        idtipoTxt.setText("jTextField1");
-
-        descripcionTxt.setText("jTextField2");
-
         registrarBtn.setText("Registrar");
 
         modificarBtn.setText("Modificar");
@@ -102,8 +98,8 @@ public class ViewTipo extends javax.swing.JFrame {
                                     .addComponent(jLabel3))
                                 .addGap(68, 68, 68)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(descripcionTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(idtipoTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(descripcionTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(idtipoTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(36, 36, 36)
                                 .addComponent(registrarBtn)

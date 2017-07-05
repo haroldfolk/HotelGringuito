@@ -70,10 +70,6 @@ public class ViewHabitacion extends javax.swing.JFrame {
 
         jLabel5.setText("Tipo de Habitacion");
 
-        idHabTxt.setText("jTextField1");
-
-        descripcionTxt.setText("jTextField2");
-
         ubicacionTxt.setText("jTextField3");
 
         tipoCmb.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
