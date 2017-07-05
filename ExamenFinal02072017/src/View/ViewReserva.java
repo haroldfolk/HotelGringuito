@@ -12,23 +12,27 @@ import Model.ModelReserva;
  * @author Harold Salces
  */
 public class ViewReserva extends javax.swing.JFrame {
+
     ModelReserva m_modelReserva;
+
     /**
      * Creates new form ViewReserva
      */
     public ViewReserva() {
-        m_modelReserva=new ModelReserva();
+        m_modelReserva = new ModelReserva();
         initComponents();
         actualizate();
+        this.tarifaTbl.setModel(m_modelReserva.getTarifas());
+        this.habitacionTbl.setModel(m_modelReserva.getHabitaciones());
+        this.clienteTbl.setModel(m_modelReserva.getClientes());
+        this.personalTbl.setModel(m_modelReserva.getPersonal());
     }
-public void actualizate(){
-    this.reservasTbl.setModel(m_modelReserva.getReservas());
-    this.tarifaTbl.setModel(m_modelReserva.getTarifas());
-    this.habitacionTbl.setModel(m_modelReserva.getHabitaciones());
-    this.clienteTbl.setModel(m_modelReserva.getClientes());
-    this.personalTbl.setModel(m_modelReserva.getPersonal());
-    
-}
+
+    public void actualizate() {
+        this.reservasTbl.setModel(m_modelReserva.getReservas());
+
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
