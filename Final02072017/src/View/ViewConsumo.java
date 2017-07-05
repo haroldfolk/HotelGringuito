@@ -124,12 +124,16 @@ public class ViewConsumo extends javax.swing.JFrame {
 
         jLabel6.setText("Reservas");
 
+        radioNormalRBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         radioNormalRBtn.setText("Consumo Normal");
 
+        radioVipRBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         radioVipRBtn.setText("Consumo Vip");
 
+        radioOfertaRBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         radioOfertaRBtn.setText("Consumo Oferta");
 
+        radioFinDeSemanaRBtn.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         radioFinDeSemanaRBtn.setText("Consumo Fin De Semana");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -168,18 +172,20 @@ public class ViewConsumo extends javax.swing.JFrame {
                                     .addComponent(jLabel5)
                                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 409, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(174, 174, 174)
-                        .addComponent(radioNormalRBtn)
-                        .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(396, 396, 396)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(132, 132, 132)
+                                .addComponent(radioNormalRBtn)
+                                .addGap(42, 42, 42)
                                 .addComponent(radioVipRBtn)
-                                .addGap(52, 52, 52)
+                                .addGap(57, 57, 57)
                                 .addComponent(radioOfertaRBtn)
-                                .addGap(56, 56, 56)
+                                .addGap(69, 69, 69)
                                 .addComponent(radioFinDeSemanaRBtn)))
-                        .addGap(0, 68, Short.MAX_VALUE)))
+                        .addGap(0, 39, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

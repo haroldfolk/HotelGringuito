@@ -119,6 +119,10 @@ public class ModelReserva {
         this.cargarReserva(idReserva);
         m_EstadoReserva.confirmarReserva(this);
         
+        
+        
+        
+        
         try {
             
             String sql = "update reserva set fechaIngreso=?,estadoReserva=? where idReserva=?";
